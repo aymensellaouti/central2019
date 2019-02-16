@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FirstComponent implements OnInit {
 
   constructor() { }
-
+  sayHello() {
+    alert('Bonjour');
+  }
   ngOnInit() {
   }
 
