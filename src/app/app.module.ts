@@ -7,6 +7,7 @@ import { SecondComponent } from './second/second.component';
 import { ColorComponent } from './color/color.component';
 import {FormsModule} from '@angular/forms';
 import { TwoComponent } from './two/two.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TwoComponent } from './two/two.component';
     FirstComponent,
     SecondComponent,
     ColorComponent,
-    TwoComponent
+    TwoComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
