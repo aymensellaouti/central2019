@@ -1,6 +1,11 @@
-<div>
+<div [style.backgroundColor]="couleur">
   Bonjour
 </div>
 
 
-<input type="text" #monInput (change)="test(monInput.value)" class="form-control">
+<input type="text"
+       [(ngModel)]="couleur"
+       class="form-control"
+>
+
+
