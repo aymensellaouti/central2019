@@ -7,7 +7,7 @@ import {Personne} from '../../Model/Personne';
   styleUrls: ['./cv.component.css']
 })
 export class CvComponent implements OnInit {
-
+  selectedPersonne: Personne;
   personnes: Personne[];
   constructor() { }
 
@@ -18,6 +18,10 @@ export class CvComponent implements OnInit {
       new Personne(2, 'test',
         'test', 24, 5555678, 'test', 'rotating_card_profile2.png')
     ];
+  }
+
+  getSelectedPersonne(personne) {
+    this.selectedPersonne = personne;
   }
 
 }
