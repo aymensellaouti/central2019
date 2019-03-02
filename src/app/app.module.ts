@@ -15,6 +15,7 @@ import { DetailComponent } from './cvTech/detail/detail.component';
 import { ListeComponent } from './cvTech/liste/liste.component';
 import { ItemComponent } from './cvTech/item/item.component';
 import { NgstyleComponent } from './directive/ngstyle/ngstyle.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NgstyleComponent } from './directive/ngstyle/ngstyle.component';
     DetailComponent,
     ListeComponent,
     ItemComponent,
-    NgstyleComponent
+    NgstyleComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
