@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-3 col-sm-4" >
+    <app-carte
+      (filsEvent)="processSonData($event)"
+      [couleur]="color"
+      [contenu]="content"
+    ></app-carte>
+  </div>
+  <div class="col-md-3 col-sm-4" >
+    <app-carte [couleur]="'lightyellow'" [contenu]="'il fait chaud'"></app-carte>
+  </div>
+  </div>
