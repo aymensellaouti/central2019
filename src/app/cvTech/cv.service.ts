@@ -17,4 +17,15 @@ export class CvService {
   getPersonnes() {
     return this.personnes;
   }
+  addPersonne(personne: Personne) {
+   this.personnes.push(personne);
+  }
+  deletePersonne(personne: Personne) {
+    const index = this.personnes.indexOf(personne);
+    if ( index >= 0 ) {
+      this.personnes.splice(index, 1);
+    } else {
+      alert ('personne innexistante');
+    }
+  }
 }

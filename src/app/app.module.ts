@@ -17,6 +17,7 @@ import { ItemComponent } from './cvTech/item/item.component';
 import { NgstyleComponent } from './directive/ngstyle/ngstyle.component';
 import { TodoComponent } from './todo/todo.component';
 import { EmbaucheComponent } from './embauche/embauche.component';
+import { AddPersonneComponent } from './cvTech/add-personne/add-personne.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EmbaucheComponent } from './embauche/embauche.component';
     ItemComponent,
     NgstyleComponent,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    AddPersonneComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<form #formulaire="ngForm">
+  <label for="name">Name</label>
+  <input id="name" required class="form-control"
+         type="text" name="name"
+         ngModel
+         #inputName="ngModel"
+  >
+  <div class="alert alert-danger" *ngIf="inputName.invalid && inputName.touched">
+    Ce champs est obligatoire
+  </div>
+  <label for="firstname">Firstname</label>
+  <input id="firstname" required type="text" class="form-control" name="firstname" ngModel>
+  <label for="job">Job</label>
+  <input id="job" class="form-control" required type="text" name="job" ngModel>
+  <label for="age">Age</label>
+  <input id="age" type="number" name="age" required class="form-control" ngModel>
+  <label for="Cin">Cin</label>
+  <input id="cin" minlength="4" type="number"  class="form-control" name="cin" ngModel>
+  <label for="path">Path</label>
+  <input id="path" type="text" class="form-control" name="path" ngModel>
+  <button [disabled]="formulaire.invalid" class="btn btn-primary" (click)="addPersonne(formulaire)">
+    Add Personne
+  </button>
+</form>
